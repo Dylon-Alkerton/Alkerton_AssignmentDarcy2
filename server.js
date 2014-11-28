@@ -25,6 +25,10 @@ io.on('connection', function(socket){
     io.emit('update', coord);
   });
 
+  socket.on('sendMessage', function(message) {
+  	io.emit('updateMessages', message);
+  });
+
 });
 
 // Start Server

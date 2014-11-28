@@ -8,29 +8,19 @@ jQuery(function($) {
     var messages = $('.messages');
     // Recieve Update Event From The Server
     socket.on('updateMessages', function(html){
+      
+        var messageItem = '<li>' + html + '</li>';
+
       // Update chat
-      messages.html(html);
+      messages.append(messageItem);
     });
 
+    $('a').click(function() {
 
-    var box = $('.box');
+        var message = $('#messageBox').val();
 
-  	var orientationChange = funtion(event) {
- 	var x = Math.floor(event.beta);
- 	var y = Math.floor(event.gamma);
- 
- 	socket.emit('move', [x,y]);
+        socket.emit('sendMessage', message);
 
-	};
-
-
-	$(window).on('deviceorientation',orientationChange);
-
-	// Recieve Update Event From The Server
-    socket.on('update', function(coord){
-    var str = 'rotateX('+ coord[0] +'deg) rotateY('+coord[1] +'deg)';
-    box.css({ transform: str, webkitTransform: str });
-    
     });
 
 });

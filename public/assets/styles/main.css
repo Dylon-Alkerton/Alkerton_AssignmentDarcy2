@@ -1,69 +1,60 @@
+/* line 1, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
 body {
   font-family: Helvetica;
   background: url("../images/Background.jpg"); }
 
+/* line 6, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
 h1 {
   text-align: center;
   font-family: Sans-Serif;
   color: #2A363B;
   font-size: 60px; }
 
+/* line 13, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
 h2 {
   text-align: center;
   color: #2A363B; }
 
+/* line 19, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
 .box {
   background-color: white;
   height: 100px;
   width: 100px;
   border-radius: 50%; }
 
+/* line 26, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
 .messages {
   display: block;
-  border: 3px dashed #2A363B;
+  border: 5px dashed #2A363B;
   width: 100%;
   min-height: 200px;
   background-color: white;
   opacity: 0.6; }
 
+/* line 35, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
+a {
+  text-decoration: none;
+  color: #2A363B;
+  font-size: 14px;
+  line-height: 100%;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 5px solid #2A363B;
+  border-radius: 15px;
+  background-color: white;
+  margin-left: 650px;
+  margin-top: 20px; }
+
+/* line 49, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
 input {
   width: 100%;
   font-size: 14px;
   line-height: 100%;
   display: inline-block;
   padding: 5px 15px;
-  border: 1px solid #2A363B; }
+  border: 5px solid #2A363B;
+  margin-top: 15px; }
 
-input:hover {
+/* line 60, /Users/DylonAlkerton/Desktop/Alkerton_Assignment2/src/assets/styles/index.sass */
+a:hover, input:hover {
   background-color: #E9E9E9; }
-
-button {
-  border-top: 1px solid #96d1f8;
-  background: #2A363B;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff9900), to(#ff9900));
-  background: -webkit-linear-gradient(top, #ff9900, #ff9900);
-  background: -moz-linear-gradient(top, #ff9900, #ff9900);
-  background: -ms-linear-gradient(top, #ff9900, #ff9900);
-  background: -o-linear-gradient(top, #ff9900, #ff9900);
-  padding: 7.5px 15px;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  border-radius: 24px;
-  -webkit-box-shadow: black 0 1px 0;
-  -moz-box-shadow: black 0 1px 0;
-  box-shadow: black 0 1px 0;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
-  color: white;
-  font-size: 13px;
-  font-family: Helvetica, Arial, Sans-Serif;
-  text-decoration: none;
-  vertical-align: middle; }
-
-button:hover {
-  border-top-color: #2a2b2b;
-  background: #2a2b2b;
-  color: #ffffff; }
-
-button:active {
-  border-top-color: #3074a1;
-  background: #3074a1; }
