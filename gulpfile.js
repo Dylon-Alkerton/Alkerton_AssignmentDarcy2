@@ -47,7 +47,7 @@ gulp.task('watch', function() {
 gulp.task('styles', function() {
 
   gulp.src('./src/assets/styles/index.sass')
-    .pipe(sass())
+    .pipe(sass({errLogToConsole:true, sourceComments:'normal'}))
     .pipe(rename('main.css'))
     .pipe(gulp.dest('./public/assets/styles/'))
 
@@ -71,7 +71,7 @@ gulp.task('scripts', function() {
 gulp.task('images', function() {
 
   gulp.src(paths.images)
-    // .pipe(imagemin())
+    .pipe(imagemin())
     .pipe(gulp.dest('./public/assets/images/'))
 
 });
